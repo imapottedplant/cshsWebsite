@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "SfProRounded";
+  src: url("fonts/SF_Pro_Rounded_Light.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SfProRounded";
+  src: url("fonts/SF_Pro_Rounded_Regular.otf");
+  font-style: bold;
+}
+@font-face {
+  font-family: "SfProRounded";
+  src: url("fonts/SF_Pro_Rounded_Medium.otf");
+  font-weight: bolder;
+}
+body {
+    margin: 0px;
+    font-family: "SfProRounded";
+}
+header, footer {
+    height: 15vh;
+    background-color: black;
+}
+header {
+    line-height: 15vh;
+}
+header ul {
+    margin:0;
+    margin-left: 0em;
+    padding:0;
+    display: inline-block;
+    list-style-type:none;
+    color: white;
+    vertical-align: top;
+}
+header ul li {
+    display: inline-block;
+    padding: 0px 1em 0px 1em;
+    margin: 0;
+    transition: 0.4s;
+}
+header ul li:hover {
+    background-color: #006db1;
+    font-weight: bolder;
+}
+header ul li a {
+    color:white;
+    text-decoration: none;
+}
+#mainlogo {
+    height: 8vh;
+    padding: 3vh;
+    display: inline-block;
+}
+.main {
+    margin: 2em 10em 2em 10em;
+    min-height: calc(100vh - 30vh)
+}
+h1 {
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0.67em 0 0.67em 0;
+}
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0;
+}
+.maintext {
+    margin: 0;
+    padding:0.5em;
+    border-style: solid;
+    border-width: 0 0 0 0.5em;
+    border-color: #006db1;
+    overflow: auto;
+}
+.intext {
+    margin:0;
+    margin-left: 2em;
+    padding:0;
+}
+.inlink {
+    font-weight: bolder;
+    color: #006db1;
+    text-decoration: underline;
+}
+.indate {
+    font-weight: bolder;
+    color: #006db1;
+    text-decoration: none;
+}
+#map {
+    width: 50%;
+    height: 60vh;
+    float: right;
+}
+#sheet {
+    width: 50%;
+    height: 60vh;
+}
+footer {
+    width: 100%;
+    height: 30vh;
+}
+#bottominfo {
+    opacity: 0.5;
+    margin:0;
+    padding:0.5em 0 0.5em 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+#bottominfo a {
+    color:white;
+    transition: 0.4s;
+}
+#bottominfo a:hover{
+    color: green;
+    opacity: 1;
+}
+#bottomlogo {
+    height: 10vh;
+    padding: 0.5em 0 0.5em 0;
+}
+@media (max-aspect-ratio: 4/5){
+    #mainlogo {
+        padding: 2vh;;
+        margin: 0;
+        height: 6vh;
+    }
+    header {
+        line-height: 10vh;
+        height: 10vh;
+    }
+    header ul li {
+        padding: 0px 0.5em 0px 0.5em;
+    }
+    .main {
+        margin: 2em 2em 2em 2em;
+    }
+    body {
+        background-color: white;
+    }
+    .intext {
+        float: none !important;
+        margin: 0;
+        overflow: auto;
+    }
+    #map {
+        width: 100%;
+        height: 60vh;
+        float: none;
+    }
+    #sheet {
+        width: 100%;
+    }
+}
